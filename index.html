@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Egyedi weboldalak, webshopok és digitális megoldások.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>DesignWeb - Digitális élmények</title>
+</head>
+
+<body>
+<header class="topbar">
+  <a class="brand" href="#top"><span class="brand-dot"></span>Design<span class="brand-slash">/</span>WEB</a>
+
+  <nav aria-label="Fő navigáció">
+    <a href="#work" data-i18n="nav.work"></a>
+    <a href="#services" data-i18n="nav.services"></a>
+    <a href="#essentials" data-i18n="nav.info"></a>
+    <a href="#contact" data-i18n="nav.contact"></a>
+  </nav>
+
+  <div class="nav-right">
+    <div class="language-switch" aria-label="Nyelvválasztó">
+      <button class="lang active" data-lang="hu">HU</button>
+      <span>/</span>
+      <button class="lang" data-lang="en">EN</button>
+    </div>
+    <a class="nav-button" href="#contact" data-i18n="nav.quote"></a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="hero-content reveal">
+    <p class="kicker"><span>01</span> DIGITAL CRAFT / 2026</p>
+    <h1 data-i18n="hero.title"></h1>
+    <p class="hero-lead" data-i18n="hero.lead"></p>
+    <a class="main-button" href="#contact" data-i18n="hero.button"></a>
+  </div>
+
+  <div class="hero-visual" aria-label="Animált digitális illusztráció">
+    <div class="grid-plane"></div>
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+    <div class="orbit-ring"></div>
+    <div class="hero-label">DESIGN<br><b>IN MOTION</b></div>
+    <div class="scroll-mark" data-i18n="hero.scroll"></div>
+  </div>
+</section>
+
+<section class="signal">
+  <span>WEB DESIGN</span><b>✦</b>
+  <span>BRANDING</span><b>✦</b>
+  <span>WEBSHOP</span><b>✦</b>
+  <span>MOTION</span><b>✦</b>
+  <span>WEB DEVELOPMENT</span>
+</section>
+
+<section class="content-section" id="services">
+  <div class="section-heading">
+    <p class="kicker"><span>02</span> WHAT I DO</p>
+    <h2 data-i18n="services.heading"></h2>
+  </div>
+
+  <div class="service-list">
+
+    <article class="service" tabindex="0" data-service="web">
+      <span class="service-index">A / 01</span>
+      <div>
+        <h3 data-i18n="services.web.title"></h3>
+        <p data-i18n="services.web.short"></p>
+      </div>
+      <span class="service-arrow">↗</span>
+    </article>
+
+    <article class="service" tabindex="0" data-service="motion">
+      <span class="service-index">A / 02</span>
+      <div>
+        <h3 data-i18n="services.motion.title"></h3>
+        <p data-i18n="services.motion.short"></p>
+      </div>
+      <span class="service-arrow">↗</span>
+    </article>
+
+    <article class="service" tabindex="0" data-service="shop">
+      <span class="service-index">A / 03</span>
+      <div>
+        <h3 data-i18n="services.shop.title"></h3>
+        <p data-i18n="services.shop.short"></p>
+      </div>
+      <span class="service-arrow">↗</span>
+    </article>
+
+    <article class="service" tabindex="0" data-service="brand">
+      <span class="service-index">A / 04</span>
+      <div>
+        <h3 data-i18n="services.brand.title"></h3>
+        <p data-i18n="services.brand.short"></p>
+      </div>
+      <span class="service-arrow">↗</span>
+    </article>
+
+    <article class="service" tabindex="0" data-service="product">
+      <span class="service-index">A / 05</span>
+      <div>
+        <h3 data-i18n="services.product.title"></h3>
+        <p data-i18n="services.product.short"></p>
+      </div>
+      <span class="service-arrow">↗</span>
+    </article>
+
+  </div>
+
+  <div class="service-detail" id="service-detail" aria-live="polite">
+    <div class="detail-art" id="detail-art">
+      <span data-i18n="services.detail.placeholder"></span>
+    </div>
+
+    <div class="detail-copy">
+      <p class="kicker"><span data-i18n="services.detail.kicker"></span></p>
+      <h3 id="detail-title"></h3>
+      <p id="detail-text"></p>
+      <ul id="detail-list"></ul>
+      <a class="outline-button" id="detail-quote" href="#contact" data-i18n="services.detail.button"></a>
+    </div>
+  </div>
+</section>
+
+<section class="feature" id="work">
+  <div class="feature-copy">
+    <p class="kicker"><span>03</span> SELECTED WORK</p>
+    <h2 data-i18n="work.heading"></h2>
+    <p data-i18n="work.text"></p>
+    <a class="outline-button" href="#contact" data-i18n="work.button"></a>
+  </div>
+
+  <div class="product-stage" aria-label="Forgatható 3D termékmodell">
+    <div class="product-shadow"></div>
+
+    <div class="product-card" id="product-card">
+      <div class="product-top">ORBIT / OBJECT 01</div>
+      <div class="product-glow"></div>
+      <div class="product-name">FORM<br><i>01</i></div>
+      <div class="product-bottom">DRAG / ROTATE</div>
+    </div>
+
+    <div class="drag-hint" data-i18n="work.drag"></div>
+  </div>
+</section>
+
+<section class="project-ideas">
+  <div class="ideas-heading">
+    <div>
+      <p class="kicker"><span>04</span> PROJECT IDEAS</p>
+      <h2 data-i18n="ideas.heading"></h2>
+    </div>
+    <p data-i18n="ideas.text"></p>
+  </div>
+
+  <div class="idea-grid">
+
+    <article class="idea idea-lime">
+      <span>01 / LANDING</span>
+      <h3 data-i18n="ideas.landing.title"></h3>
+      <p data-i18n="ideas.landing.text"></p>
+      <b>BRAND LAUNCH ↗</b>
+    </article>
+
+    <article class="idea idea-violet">
+      <span>02 / SHOP</span>
+      <h3 data-i18n="ideas.shop.title"></h3>
+      <p data-i18n="ideas.shop.text"></p>
+      <b>SELL ONLINE ↗</b>
+    </article>
+
+    <article class="idea idea-coral">
+      <span>03 / PROFILE</span>
+      <h3 data-i18n="ideas.profile.title"></h3>
+      <p data-i18n="ideas.profile.text"></p>
+      <b>SHOW YOUR WORK ↗</b>
+    </article>
+
+  </div>
+</section>
+
+<section class="essentials" id="essentials">
+  <div class="section-heading">
+    <p class="kicker"><span>05</span> DIGITAL ESSENTIALS</p>
+    <h2 data-i18n="essentials.heading"></h2>
+  </div>
+
+  <div class="essentials-grid">
+
+    <article class="essential-card" tabindex="0" data-essential="mobile">
+      <b>01 / MOBIL</b>
+      <h3 data-i18n="essentials.mobile.title"></h3>
+      <p data-i18n="essentials.mobile.short"></p>
+      <span class="card-hint" data-i18n="essentials.hint"></span>
+    </article>
+
+    <article class="essential-card" tabindex="0" data-essential="domain">
+      <b>02 / DOMAIN</b>
+      <h3 data-i18n="essentials.domain.title"></h3>
+      <p data-i18n="essentials.domain.short"></p>
+      <span class="card-hint" data-i18n="essentials.hint"></span>
+    </article>
+
+    <article class="essential-card" tabindex="0" data-essential="testing">
+      <b>03 / QUALITY</b>
+      <h3 data-i18n="essentials.testing.title"></h3>
+      <p data-i18n="essentials.testing.short"></p>
+      <span class="card-hint" data-i18n="essentials.hint"></span>
+    </article>
+
+    <article class="essential-card" tabindex="0" data-essential="seo">
+      <b>04 / FINDABILITY</b>
+      <h3 data-i18n="essentials.seo.title"></h3>
+      <p data-i18n="essentials.seo.short"></p>
+      <span class="card-hint" data-i18n="essentials.hint"></span>
+    </article>
+
+    <article class="essential-card" tabindex="0" data-essential="editing">
+      <b>05 / CONTROL</b>
+      <h3 data-i18n="essentials.editing.title"></h3>
+      <p data-i18n="essentials.editing.short"></p>
+      <span class="card-hint" data-i18n="essentials.hint"></span>
+    </article>
+
+    <article class="essential-card" tabindex="0" data-essential="support">
+      <b>06 / CARE</b>
+      <h3 data-i18n="essentials.support.title"></h3>
+      <p data-i18n="essentials.support.short"></p>
+      <span class="card-hint" data-i18n="essentials.hint"></span>
+    </article>
+
+  </div>
+
+  <p class="section-hint" data-i18n="essentials.sectionHint"></p>
+
+  <div class="essential-detail" id="essential-detail" aria-live="polite">
+    <div class="essential-detail-copy">
+      <p class="kicker"><span data-i18n="essentials.detail.kicker"></span></p>
+      <h3 id="essential-title"></h3>
+      <p id="essential-text"></p>
+      <ul id="essential-detail-list"></ul>
+    </div>
+
+    <div class="essential-detail-visual" id="essential-detail-visual">
+      <div class="essential-plus">+</div>
+
+      <div class="detail-window">
+        <i></i><i></i><i></i>
+        <span></span>
+        <b></b><b></b><b></b>
+      </div>
+
+      <div class="search-demo">
+        <small>google.com</small>
+        <strong>orbitweb.hu</strong>
+        <em>✓ biztonságos webhely</em>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section process" id="process">
+  <div class="section-heading">
+    <p class="kicker"><span>06</span> THE PROCESS</p>
+    <h2 data-i18n="process.heading"></h2>
+
+    <div class="process-meter">
+      <span></span>
+      <b>03 / 03</b>
+    </div>
+  </div>
+
+  <div class="process-grid">
+
+    <div>
+      <b>01</b>
+      <h3 data-i18n="process.step1.title"></h3>
+      <p data-i18n="process.step1.text"></p>
+      <i class="step-pulse"></i>
+    </div>
+
+    <div>
+      <b>02</b>
+      <h3 data-i18n="process.step2.title"></h3>
+      <p data-i18n="process.step2.text"></p>
+      <i class="step-pulse"></i>
+    </div>
+
+    <div>
+      <b>03</b>
+      <h3 data-i18n="process.step3.title"></h3>
+      <p data-i18n="process.step3.text"></p>
+      <i class="step-pulse"></i>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-intro">
+
+    <p class="kicker"><span>07</span> LET'S MAKE IT REAL</p>
+
+    <h2 data-i18n="contact.heading"></h2>
+
+    <p class="contact-note" data-i18n="contact.note"></p>
+
+    <div class="review-request">
+      <div class="card-topline">
+        <span data-i18n="review.label"></span>
+        <b>YOUR TURN</b>
+      </div>
+
+      <h3 data-i18n="review.title"></h3>
+
+      <form id="review-form">
+
+        <div class="empty-rating" aria-label="Értékelés">
+          <input id="rating-1" name="rating" type="radio" value="1" required>
+          <label for="rating-1">★</label>
+
+          <input id="rating-2" name="rating" type="radio" value="2">
+          <label for="rating-2">★</label>
+
+          <input id="rating-3" name="rating" type="radio" value="3">
+          <label for="rating-3">★</label>
+
+          <input id="rating-4" name="rating" type="radio" value="4">
+          <label for="rating-4">★</label>
+
+          <input id="rating-5" name="rating" type="radio" value="5">
+          <label for="rating-5">★</label>
+        </div>
+
+        <div class="rating-summary" id="rating-summary"></div>
+
+        <textarea name="review" rows="2" data-i18n-placeholder="review.placeholder" required></textarea>
+
+        <div class="review-fields">
+          <input name="reviewer" data-i18n-placeholder="review.name" required>
+          <button class="small-button" type="submit" data-i18n="review.button"></button>
+        </div>
+
+      </form>
+
+      <div class="saved-reviews" id="saved-reviews"></div>
+    </div>
+
+  </div>
+
+  <div class="contact-cards">
+    <form class="quote-card" id="quote-form">
+
+      <div class="card-topline">
+        <span>PROJECT INTAKE</span>
+        <b>● OPEN</b>
+      </div>
+
+      <p class="email-note" data-i18n="quote.note"></p>
+
+      <label>
+        <span data-i18n="quote.subjectLabel"></span>
+        <input id="quote-subject" name="subject" type="text">
+      </label>
+
+      <label>
+        <span data-i18n="quote.nameLabel"></span>
+        <input name="name" type="text" data-i18n-placeholder="quote.namePlaceholder" required>
+      </label>
+
+      <label>
+        <span data-i18n="quote.emailLabel"></span>
+        <input name="email" type="email" data-i18n-placeholder="quote.emailPlaceholder" required>
+      </label>
+
+      <label>
+        <span data-i18n="quote.projectLabel"></span>
+        <textarea name="project" rows="3" data-i18n-placeholder="quote.projectPlaceholder"></textarea>
+      </label>
+
+      <button class="main-button" type="submit" data-i18n="quote.button"></button>
+
+      <p class="form-status" id="form-status"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <span class="brand"><span class="brand-dot"></span>Design<span class="brand-slash">/</span>WEB</span>
+  <span data-i18n="footer.copyright"></span>
+  <a href="mailto:designlap.webs@gmail.com">designlap.webs@gmail.com ↗</a>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
